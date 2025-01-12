@@ -1,0 +1,1 @@
+---layout: defaulttitle: Sentiment Analyser---# Sentiment Analyser- **Description**: Sentiment analysis system for classifying Amazon reviews as positive or negative.- **Technologies**: Python, scikit-learn, TF-IDF, Bag of Words, Neural Networks.- **Results**: Achieved 88% accuracy on a balanced dataset of reviews.

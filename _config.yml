@@ -1,0 +1,14 @@
+title: Ashwin's Portfolio
+description: AI Engineer | DevOps Specialist
+theme: minima
+baseurl: "/ashwin_purushothamadhas.github.io"
+url: https://ashwin2929.github.io
+
+# Navigation Links
+nav_links:
+  - title: Home
+    url: /
+  - title: AI/ML Projects
+    url: /projects/ai-ml/
+  - title: DevOps Projects
+    url: /projects/devops/
