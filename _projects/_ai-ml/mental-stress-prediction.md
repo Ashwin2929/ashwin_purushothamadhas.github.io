@@ -1,1 +1,0 @@
----layout: defaulttitle: EEG-Based Mental Stress Prediction---# EEG-Based Mental Stress Prediction- **Description**: Neural network to predict mental stress using EEG signal data.- **Technologies**: Python, TensorFlow, PyTorch, Neural Netorks, Logistic Regression.- **Results**: Demonstrated 90% accuracy in stress classification.

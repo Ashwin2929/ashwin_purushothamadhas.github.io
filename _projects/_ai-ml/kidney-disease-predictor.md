@@ -1,1 +1,0 @@
----layout: defaulttitle: Kidney Disease Predictor---# Kidney Disease Predictor- **Description**: Predictive model for diagnosing kidney disease using patient medical data.- **Technologies**: Python, pandas, scikit-learn, Decision Trees, Random Forest.- **Results**: Achieved 99% accuracy in detecting kidney disease from test datasets.
