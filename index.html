@@ -49,14 +49,23 @@
         }
         .tablinks {
             background-color: #f4f4f4;
-            border: none;
+            border: 1px solid #ccc;
             outline: none;
             cursor: pointer;
             padding: 10px 20px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 16px;
+            border-radius: 5px; /* Rounded borders for a more modern look */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
         }
         .tablinks:hover {
             background-color: #ddd;
+            transform: translateY(-2px); /* Slight raise effect on hover */
+        }
+        .tablinks.active, .tablinks:focus {
+            background-color: #333; /* Dark background for active tab */
+            color: #fff; /* White text for contrast */
+            border-color: #333;
         }
         .tabcontent {
             display: none;
@@ -100,7 +109,7 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>I am an AI Engineer and DevOps Specialist with a rich background in developing, deploying, and optimizing cloud and AI solutions. Holding a Master's degree in AI with distinction, I am passionate about leveraging technology to solve real-world problems. My expertise spans cloud infrastructure, CI/CD pipelines, and machine learning, with a proven track record in both academic and professional settings.</p>
+            <p>With over six years of experience as a Cloud Infrastructure and DevOps Specialist, I specialize in the integration of cloud technology and AI to develop scalable, secure solutions. My expertise covers AWS services, CI/CD pipelines, and machine learning model deployment. At Accenture, I led cloud architecture designs and automated deployment processes, reducing implementation errors by 20% and deployment time by 90%. A proactive problem-solver, I leverage AI and machine learning to drive innovation and efficiency in technology deployments. Certified in AWS, I aim to contribute to projects that harness the power of AI and cloud technologies.</p>
         </section>
 
         <section id="projects">
