@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,18 +42,27 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .project {
-            margin-bottom: 2rem;
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
         }
-        .project h3 {
-            margin-top: 0;
+        .tablinks {
+            background-color: #f4f4f4;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
         }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        .tablinks:hover {
+            background-color: #ddd;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
         }
         .btn {
             display: inline-block;
@@ -64,6 +75,13 @@
         }
         .btn:hover {
             background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -87,56 +105,67 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            
-            <!-- Meteor Detection -->
-            <div class="project">
-                <h3>Meteor Detection</h3>
-                <p>Developed a system using YOLO11 for automated meteor detection in spectrogram images, showcasing the application of deep learning in astronomical data analysis.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/Meteor_Detection" target="_blank">GitHub Repository</a>
-            </div>
-            
-            <!-- Predicting Loan Defaults -->
-            <div class="project">
-                <h3>Predicting Loan Defaults</h3>
-                <p>A comprehensive study using various machine learning models to predict loan defaults from financial data, highlighting the effectiveness of ensemble methods.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/Predicting_Loan_Defaults" target="_blank">GitHub Repository</a>
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'AI_ML')">AI/ML Projects</button>
+                <button class="tablinks" onclick="openTab(event, 'DevOps')">DevOps Projects</button>
             </div>
 
-            <!-- Chronic Kidney Disease Analyser -->
-            <div class="project">
-                <h3>Chronic Kidney Disease Analyser</h3>
-                <p>This project developed a machine learning system to predict chronic kidney disease using various models. The system achieved up to 100% accuracy with models like SVM and XGBoost, and includes a mobile app for instant predictions.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/Chronic_Kidney_Disease_Analyser" target="_blank">GitHub Repository</a>
+            <!-- Tab content for AI/ML Projects -->
+            <div id="AI_ML" class="tabcontent">
+                <!-- Meteor Detection -->
+                <div class="project">
+                    <h3>Meteor Detection</h3>
+                    <p>Developed a system using YOLO11 for automated meteor detection in spectrogram images, showcasing the application of deep learning in astronomical data analysis.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/Meteor_Detection" target="_blank">GitHub Repository</a>
+                </div>
+                
+                <!-- Predicting Loan Defaults -->
+                <div class="project">
+                    <h3>Predicting Loan Defaults</h3>
+                    <p>A comprehensive study using various machine learning models to predict loan defaults from financial data, highlighting the effectiveness of ensemble methods.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/Predicting_Loan_Defaults" target="_blank">GitHub Repository</a>
+                </div>
+
+                <!-- Chronic Kidney Disease Analyser -->
+                <div class="project">
+                    <h3>Chronic Kidney Disease Analyser</h3>
+                    <p>This project developed a machine learning system to predict chronic kidney disease using various models. The system achieved up to 100% accuracy with models like SVM and XGBoost, and includes a mobile app for instant predictions.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/Chronic_Kidney_Disease_Analyser" target="_blank">GitHub Repository</a>
+                </div>
+
+                <!-- Sentiment Predictor -->
+                <div class="project">
+                    <h3>Sentiment Predictor</h3>
+                    <p>An advanced sentiment analysis tool utilizing unsupervised and supervised learning to analyze text data, achieving high accuracy in sentiment classification.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/Sentiment_Predictor" target="_blank">GitHub Repository</a>
+                </div>
+
+                <!-- Postpartum Depression Predictive Model -->
+                <div class="project">
+                    <h3>Postpartum Depression Predictive Model</h3>
+                    <p>A machine learning model for early detection of postpartum depression, achieving up to 96% accuracy with classifiers like SVC and Random Forest.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/Postpartum-Depression-Predictive-Model" target="_blank">GitHub Repository</a>
+                </div>
+
+                <!-- EEG-Based Mental Workload Classification -->
+                <div class="project">
+                    <h3>EEG-Based Mental Workload Classification</h3>
+                    <p>Utilizes EEG data to classify mental workload with an accuracy of about 87%, demonstrating the effectiveness of CNNs in interpreting complex signal data.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/EEG-Based-Mental-Workload-Classification" target="_blank">GitHub Repository</a>
+                </div>
+
+                <!-- Automated Sleep Stage Classification -->
+                <div class="project">
+                    <h3>Automated Sleep Stage Classification</h3>
+                    <p>Employs machine learning to classify sleep stages from polysomnography data, with XGBoost providing the best performance among the models used.</p>
+                    <a class="btn" href="https://github.com/Ashwin2929/Automated_Sleep_Stage_Classification" target="_blank">GitHub Repository</a>
+                </div>
             </div>
 
-            <!-- Sentiment Predictor -->
-            <div class="project">
-                <h3>Sentiment Predictor</h3>
-                <p>An advanced sentiment analysis tool utilizing unsupervised and supervised learning to analyze text data, achieving high accuracy in sentiment classification.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/Sentiment_Predictor" target="_blank">GitHub Repository</a>
+            <!-- Tab content for DevOps Projects -->
+            <div id="DevOps" class="tabcontent">
+                <!-- Future DevOps projects can be added here -->
             </div>
-
-            <!-- Postpartum Depression Predictive Model -->
-            <div class="project">
-                <h3>Postpartum Depression Predictive Model</h3>
-                <p>A machine learning model for early detection of postpartum depression, achieving up to 96% accuracy with classifiers like SVC and Random Forest.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/Postpartum-Depression-Predictive-Model" target="_blank">GitHub Repository</a>
-            </div>
-
-            <!-- EEG-Based Mental Workload Classification -->
-            <div class="project">
-                <h3>EEG-Based Mental Workload Classification</h3>
-                <p>Utilizes EEG data to classify mental workload with an accuracy of about 87%, demonstrating the effectiveness of CNNs in interpreting complex signal data.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/EEG-Based-Mental-Workload-Classification" target="_blank">GitHub Repository</a>
-            </div>
-
-            <!-- Automated Sleep Stage Classification -->
-            <div class="project">
-                <h3>Automated Sleep Stage Classification</h3>
-                <p>Employs machine learning to classify sleep stages from polysomnography data, with XGBoost providing the best performance among the models used.</p>
-                <a class="btn" href="https://github.com/Ashwin2929/Automated_Sleep_Stage_Classification" target="_blank">GitHub Repository</a>
-            </div>
-            
         </section>
 
         <section id="contact">
@@ -153,5 +182,21 @@
     <footer>
         <p>&copy; 2025 Ashwin Purushothamadhas. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
